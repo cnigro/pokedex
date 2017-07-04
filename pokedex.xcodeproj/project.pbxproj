@@ -20,6 +20,7 @@
 		1024AB021F09D90300452568 /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1024AB001F09D90300452568 /* PokemonSolid.ttf */; };
 		1024AB071F09DABF00452568 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1024AB061F09DABF00452568 /* music.mp3 */; };
 		1024AB091F09DACC00452568 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 1024AB081F09DACC00452568 /* music.png */; };
+		1024AB0B1F0AA24200452568 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1024AB0A1F0AA24200452568 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1024AB001F09D90300452568 /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
 		1024AB061F09DABF00452568 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		1024AB081F09DACC00452568 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		1024AB0A1F0AA24200452568 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1024AAE51F09943C00452568 /* ViewController.swift */,
+				1024AB0A1F0AA24200452568 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				1024AAFC1F09AA7900452568 /* PokeCell.swift in Sources */,
 				1024AAE61F09943C00452568 /* ViewController.swift in Sources */,
 				1024AAE41F09943C00452568 /* AppDelegate.swift in Sources */,
+				1024AB0B1F0AA24200452568 /* PokemonDetailVC.swift in Sources */,
 				1024AAF91F09A1FF00452568 /* Pokemon.swift in Sources */,
 				1024AAFE1F09CDF300452568 /* csv.swift in Sources */,
 			);
@@ -375,6 +379,7 @@
 				1024AAF41F09943C00452568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

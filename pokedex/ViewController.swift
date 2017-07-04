@@ -80,7 +80,17 @@ class ViewController: UIViewController, UICollectionViewDelegate,
 	
 	// cell tap behavior
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		//TODO: fill this in later
+		
+		var poke: Pokemon!
+		
+		if inSearchMode {
+			poke = filteredPokemon[indexPath.row]
+		} else {
+			poke = pokemon[indexPath.row]
+		}
+		
+		performSegue(withIdentifier: "PokemonDetailVC", sender: poke)
+		
 	}
 	
 	// dequeue cells and set up collection view
@@ -164,6 +174,18 @@ class ViewController: UIViewController, UICollectionViewDelegate,
 			let lower = searchBar.text!.lowercased()
 			filteredPokemon = pokemon.filter({$0.name.range(of: lower) != nil})
 			collection.reloadData()
+		}
+		
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		
+		if segue.identifier == "PokemonDetailVC" {
+			if let detailsVC = segue.destination as? PokemonDetailVC {
+				if let poke = sender as? Pokemon {
+					detailsVC.pokemon = poke
+				}
+			}
 		}
 		
 	}
